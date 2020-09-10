@@ -1,0 +1,84 @@
+start-sum: 1000
+mysql:
+  host: 'localhost'
+  port: 3306
+  username: 'root'
+  password: 'leyn'
+  database: 'testbestplayer'
+messages:
+  not_enough_money: '&cОшибка, у Вас недостаточно средств!'
+  already_bestplayer: '&cОшибка, Вы уже являетесь лучшим игроком!'
+  status_not_expired: '&6BestPlayer &8| &fВы все еще являетесь лушим игроком!'
+gui:
+  title: 'Лучший игрок'
+  rows: 4
+  items:
+    bestplayer:
+      name: '&eЛучший игрок'
+      slot: 14
+      lore:
+        - ''
+        - '&7Игрок %best-player% &7является почетным игроком'
+        - '&7нашего проекта. Данный статус можно купить за'
+        - '&7обыкновенные монетки, а также перекупить у другого игрока'
+        - ''
+        - '&7Статус истекает через:'
+        - ' &e%expire-date%'
+        - ''
+        - ' &cСпособы и условия перекупки Вы '
+        - ' &cможете посмотреть ниже'
+        - - ''
+    buy1:
+      name: '&eПерекупить статус (I LvL)'
+      slot: 22
+      lore:
+        - ''
+        - '&7Перекупив статус за данную стоимость,'
+        - '&7следующий игрок сможет это сделать за цену выше,'
+        - '&7отталкиваясь от данной'
+        - ''
+        - ' &7Итоговая стоимость: &b%buy-cost% монет'
+        - ''
+        - '&eНажмите, чтобы перекупить статус!'
+      cost-add: 10
+      texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWU4YjMxN2I2MzE3MmJkY2VmOWIzNTExNmU4YmI5OTc0NzkyOTZhZmRiOTEwYTkwYWQ3M2NkOTQ2ZGM3NjAyYyJ9fX0'
+    buy2:
+      name: '&eПерекупить статус (II LvL)'
+      slot: 23
+      lore:
+        - ''
+        - '&7Перекупив статус за данную стоимость,'
+        - '&7следующий игрок сможет это сделать за цену выше,'
+        - '&7отталкиваясь от данной'
+        - ''
+        - ' &7Итоговая стоимость: &b%buy-cost% монет'
+        - ''
+        - '&eНажмите, чтобы перекупить статус!'
+      cost-add: 50
+      texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWU4YjMxN2I2MzE3MmJkY2VmOWIzNTExNmU4YmI5OTc0NzkyOTZhZmRiOTEwYTkwYWQ3M2NkOTQ2ZGM3NjAyYyJ9fX0'
+    buy3:
+      name: '&eПерекупить статус (III LvL)'
+      slot: 24
+      lore:
+        - ''
+        - '&7Перекупив статус за данную стоимость,'
+        - '&7следующий игрок сможет это сделать за цену выше,'
+        - '&7отталкиваясь от данной'
+        - ''
+        - ' &7Итоговая стоимость: &b%buy-cost% монет'
+        - ''
+        - '&eНажмите, чтобы перекупить статус!'
+      cost-add: 120
+      texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWU4YjMxN2I2MzE3MmJkY2VmOWIzNTExNmU4YmI5OTc0NzkyOTZhZmRiOTEwYTkwYWQ3M2NkOTQ2ZGM3NjAyYyJ9fX0'
+
+default-npc-skin: 'MHF_Question'
+default-hologram:
+  - '&7&lЛучший игрок'
+  - '&c(неизвестно)'
+  - '&r'
+  - '&7Нажмите, чтобы открыть меню!'
+hologram:
+  - '&e&lЛучший игрок'
+  - '%best-player%'
+  - '&r'
+  - '&eНажмите, чтобы открыть меню!'
